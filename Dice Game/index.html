@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="pic">
+           <img src="dice_1.png" id="die1">
+           <img src="dice_2.png" id="die2">
+        </div>
+        <br>
+        
+        <button id="btn" onclick="rollDice()">ROLL</button>
+        <br><br>
+        <h2 id="score">Your Score</h2>
+        <br>
+
+        <div class="players">
+            <div class="player1">
+                <h1>
+                    Player 1
+                </h1>
+                <div id="player1-Dice" class="dice active">-</div>
+                <p id="player1-msg" style="display:none;">Player 1 won</p>
+            </div>
+
+            <div class="player2">
+                <h1>
+                    Player 2
+                </h1>
+                <div id="player2-Dice" class="dice active">-</div>
+                <p id="player2-msg" style="display:none;">Player 2 won</p>
+            </div>
+        </div>
+
+        <button onclick="reset()">RESET</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
